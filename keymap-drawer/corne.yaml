@@ -1,8 +1,51 @@
 layout: {zmk_keyboard: corne}
 layers:
-  BAS: [↹, B, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', '$$mdi:apple-keyboard-control$$', A, S, D, F, G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$',
-    Z, X, C, V, B, N, M, ',', ., /, Esc, '$$mdi:apple-keyboard-command$$', LOW, ENTER, ␣, RAI, '$$mdi:apple-keyboard-option$$']
-  LOW:
+  default:
+  - ESCAPE
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - $$mdi:backspace-outline$$
+  - ↹
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ⏎
+  - $$mdi:apple-keyboard-shift$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ''''
+  - $$mdi:apple-keyboard-command$$
+  - {t: default, h: toggle}
+  - LEFT SHIFT
+  - {t: ␣, h: LEFT CONTROL}
+  - {t: lower, h: toggle}
+  - LEFT CONTROL
+  - ␣
+  - ⏎
+  lower:
   - ↹
   - '1'
   - '2'
@@ -21,31 +64,33 @@ layers:
   - BT 3
   - BT 4
   - BT 5
+  - Home
   - ←
-  - ↓
   - ↑
   - →
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - End
+  - ⏎
   - $$mdi:apple-keyboard-shift$$
+  - EP ON
+  - '&studio_unlock'
+  - PLAY PAUSE
+  - AC DESKTOP SHOW ALL APPLICATIONS
+  - GLOBE
+  - Alt+Sft+␣
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ↓
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-command$$
-  - {type: held}
-  - ␣
-  - ⏎
-  - {t: ▽, type: trans}
+  - {t: default, h: toggle}
+  - LEFT SHIFT
+  - LEFT CONTROL
+  - {t: raise, h: toggle}
   - $$mdi:apple-keyboard-option$$
-  RAI:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  raise:
   - ↹
   - '!'
   - '@'
@@ -54,37 +99,39 @@ layers:
   - '%'
   - ^
   - AMPS
-  - KP MULTIPLY
+  - '*'
   - (
   - )
   - $$mdi:backspace-outline$$
   - $$mdi:apple-keyboard-control$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - '-'
   - '='
   - '['
   - ']'
   - \
+  - F1
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
+  - '&mkp MB5'
+  - {t: ▽, type: trans}
+  - AL LOCK
   - '`'
-  - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - _
   - +
-  - '{'
-  - '}'
-  - '|'
+  - F1
+  - F2
+  - F3
+  - F2
+  - '&mkp LCLK'
+  - '&mmv MOVE_DOWN'
+  - '&mkp RCLK'
+  - '&mkp MB4'
   - '~'
   - $$mdi:apple-keyboard-command$$
-  - '&studio_unlock'
-  - ␣
-  - ⏎
-  - {t: '&studio_unlock', type: held}
+  - {t: default, h: toggle}
+  - LEFT SHIFT
+  - LEFT CONTROL
+  - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-option$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
